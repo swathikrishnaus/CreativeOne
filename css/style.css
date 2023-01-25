@@ -382,9 +382,9 @@ body{
   .menu-icon:not(:checked) + label{
     right: 55px;
   }
-  .logo {
-    left: 30px;
-  }
+  /* .logo {
+    margin-left: auto;
+  } */
   .nav{
     right: 30px;
   }
@@ -403,6 +403,13 @@ body{
     float: right;
    
   }
+  .section-center .home-img-size{
+    width: 250px;
+    height: auto;
+  }
+  .section-center .social-icons{
+    margin-top: 0px!important;
+}
   .home{
     padding: 10px;
   }
@@ -412,7 +419,7 @@ body{
 }
 header .img-bg{
   
-  height: 50vh;
+  height: 40vh;
   width: auto;
   margin: 0 auto;
   margin-top: 50px;
@@ -442,6 +449,17 @@ header .explore{
 .social-icons{
   margin-top: 10px;
 }
+.section-center .next-buttons{
+  right: 0px;
+  bottom: 10px;
+  padding: 10px;
+}
+.section-center .logo {
+  margin-left: 50px!important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 }
 
 
@@ -572,13 +590,11 @@ header .explore{
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   padding: 15px;
   border-radius: 16px;
+  transform: skew(-5deg);
   text-align: justify;
 }
 .about-us .vision-cards{
   margin-top: 50px;
-}
-.about-us .vision .card ul li{
-  /* list-style: none; */
 }
 .about-us .card-vision .card img{
   width: 100px;
@@ -594,6 +610,7 @@ header .explore{
   border-radius: 16px;
   text-align: justify;
   width: 100%;
+  transform: skew(-5deg);
 }
 .about-us .core-values img{
   width: 100px;
@@ -603,6 +620,30 @@ header .explore{
   width: 500px;
   margin-top: 150px;
   height: auto;
+}
+.about-us .about-us-para{
+  text-align: justify;
+}
+@media screen and (max-width: 991px){
+  .about-us{
+    padding: 10px;
+    margin-top: 150px;
+  }
+  .about-us .core-values{
+    transform: skew(-2deg);
+    margin: 0 auto;
+  }
+  .about-us .card-vision .card{
+    transform: skew(-2deg);
+    margin-bottom: 10px;
+  }
+.vision .vision-image{
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
 }
 
 
@@ -672,7 +713,9 @@ header .explore{
   color: #494d52; 
   font-size: 13px;
 }
-
+.modal select option:hover{
+  background-color: #00b5f111;
+}
 
 .modal .submit-btn{
   background-color: #00B4F1;
@@ -700,6 +743,7 @@ header .explore{
 @media screen and (max-width: 991px){
   .ask-query{
     padding: 50px 10px;
+    margin-top: 0px;
   }
   .ask-query .query-details p{
     width: 100%;
@@ -714,6 +758,7 @@ header .explore{
   .ask-query .query-btn{
     margin: 0 auto;
     display: block;
+    transform: skew(-4deg);
   }
 }
 
@@ -725,12 +770,14 @@ header .explore{
 /* -------------------------services start---------------------------- */
 
 .services{
+  margin-top: 100px;
   padding-top: 150px;
   /* background: -webkit-radial-gradient(right 60%,red,yellow,green); */
 background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rgb(255, 255, 255));
 }
 .services .service-cards{
-  margin-top: 50px;
+  
+  margin-bottom: 100px;
 }
 .services .service-cards .card{
   border: 0;
@@ -811,33 +858,52 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
 }
 @media screen and (max-width: 991px){
   .services{
-    padding: 100px 20px;
+    padding: 20px;
+    margin-top: 100px;
   }
   .services .service-cards .card{
     width: 100%;
     height: 100%;
-    
+    transform: skew(-2deg);
   }
   .services .service-cards{
     margin-top: 100px;
+    margin-bottom: 50px;
   }
   .bottom-margin{
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   .services .row{
     margin: 0 auto;
   }
+  .services .service-cards{
+  
+  margin-bottom: 10px;
+}
 }
 
 /* -------------------------services end---------------------------- */
+
+
+
+
+
+/* -------------------------our services start---------------------------- */
+
 
 .our-services .card{
   width: 100%!important;
   height: 100%!important;
 }
 .our-services{
-  margin-bottom: 100px!important;
+  margin-bottom: 10px!important;
+  padding-top: 80px;
 }
+
+/* -------------------------our services end---------------------------- */
+
+
+
 
 
 /* -------------------------testimonial start---------------------------- */
@@ -889,10 +955,18 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
 @media screen and (max-width: 991px){
   .testimonial{
     padding: 10px;
+    margin-top: 10px;
   }
   .testimonial .client-words{
     text-align: center;
     margin-top: 10px;
+  }
+  .testimonial img{
+    transform: skew(-3deg);
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: auto;
   }
   .testimonial .client-review{
     width: 100%;
@@ -955,6 +1029,11 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
 .contact .border-right{
   border-right: 1px solid #00B4F1;
 }
+@media screen and (max-width: 991px){
+  .contact{
+    text-align: center;
+  }
+}
 
 /* -------------------------contact end---------------------------- */
 
@@ -965,6 +1044,7 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
 
 .contact-us{
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 .contact-us form{
   border-radius: 15px;
@@ -1071,8 +1151,21 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
     width: 100%;
     height: 100%;
   }
+  .contact-us .icon-bg{
+    transform: skew(-3deg);
+  }
   .contact-us .link{
     justify-content: center;
+  }
+  .contact-us .insta{
+    padding: 4px;
+    
+  }
+  .contact-us .insta i{
+    margin-left: -7px;
+  }
+  .contact-us .fb{
+    padding: 6px 1px;
   }
   .contact-us .contact-details{
     margin-top: 100px;

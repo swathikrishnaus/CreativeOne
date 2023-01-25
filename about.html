@@ -25,12 +25,12 @@
             <label for="menu-icon"></label>
             <nav class="nav"> 		
                 <ul class="pt-5">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Ask Query</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ask Query</a></li>
+                    <li><a href="/#testimonial">Testimonial</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
        </div>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h3 class="fw-bold head-color text-uppercase mt-5">All info ABOUT us</h3>
-                    <p class="para-color mt-3">Creative one Accounting and auditing establishment is located at the heart of the economic activities in Dubai in the United Arab Emirates. 
+                    <p class="para-color mt-3 about-us-para">Creative one Accounting and auditing establishment is located at the heart of the economic activities in Dubai in the United Arab Emirates. 
                         We are a local leading provider of accounting & bookkeeping, Audit & Assurance, Value added tax (VAT), preparation of financial statements, Budgeting, financial forecasts, Internal audit, stock audit, Feasibility study, payroll maintenance, company setup and related services. We offer pragmatic advise and solutions tailored especially to your business circumstances.
                         
                         We focus on proving financial services and strategies for business success. When equipping businesses with different strategies and tools that promote success, growth and better management making decisions, we deliver services that are more than just accounting.
@@ -97,32 +97,12 @@
                                     </div>
                                 </div>
         
-                                <!-- <div class="col-lg-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <img src="images/about/about-us/mission.png" alt="vision image" class="card-img-top">
-                                            <h6 class="card-title sub-head-color fw-bold text-center text-uppercase mt-4">Our Values</h6>
-                                            Quality work and service
-                                            <ul>
-                                                <li>Integrity in everything we do</li>
-                                                <li>Timely response and delivery</li>
-                                                <li>Attentive to and respectful of the needs of our clients</li>
-                                                <li>Proactive in our planning and communication</li>
-                                                <li>Innovative and practical in our problem solving</li>
-                                                <li> Personalized and dependable service</li>
-                                                <li>Flexible and adaptive to meet the needs of an ever-evolving industry</li>
-                                                <li>Loyal to one another and dedicated to the team effort</li>
-                                                <li>Committed to the professional and personal development of our people </li>
-                                            </ul>                               
-                                        </div>
-                                    </div>
-                                </div> -->
         
                             </div>
         
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="card core-values mt-5">
+                                    <div class="card core-values mt-sm-2 mt-md-5">
                                         <div class="card-body">
                                             <img src="images/about/about-us/mission.png" alt="vision image" class="card-img-top">
                                             <h6 class="card-title sub-head-color fw-bold text-uppercase mt-4">Our Values</h6>
@@ -170,9 +150,9 @@
                     <div class="col-lg-6">
                         <div class="d-flex links">
                             <div class="footer-links mt-4">
-                                <a href="#" class="me-3">About</a>
-                                <a href="#" class="me-3">Services</a>
-                                <a href="#" class="me-3">Contact</a>
+                                <a href="about.html" class="me-3">About</a>
+                                <a href="services.html" class="me-3">Services</a>
+                                <a href="contact.html" class="me-3">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -204,6 +184,71 @@
     </section>
 
      <!-- ---------------------------------footer end--------------------------------- -->
+
+
+
+
+
+          <!-- ------------------modal start---------------------- -->
+
+
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  
+                <div class="modal-body">
+                    <button type="button" class="btn-close mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                  <form>
+                    <h5 class="modal-title fw-bold text-center head-color text-uppercase" id="exampleModalLabel">Get Free Consultation</h5>
+                    <p class="para-color text-center modal-sub">Please fill below form and submit. <br> We will contact soon! </p>
+    
+                   <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="number" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                         <label for="name" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Select service</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Payroll services</option>
+                            <option value="1">Book Keeping and Accounting</option>
+                            <option value="2">Preparation of Financial Statement</option>
+                            <option value="3">Budgeting and Financial Forecast</option>
+                            <option value="3">Vat Subimission and Vat Audit</option>
+                            <option value="3">Auditing</option>
+                            <option value="3">Stock Audit</option>
+                            <option value="3">Internal Audit</option>
+                          </select>
+                   </div>
+    
+                   <div class="d-flex modal-buttons">
+                    <button type="button" class="submit-btn btn-sm me-2 ">Book Consultation</button>
+                    <button type="button" class="close-btn btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div> 
+    
+                  </form>
+    
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+         <!-- --------------------modal end------------------------- -->
+
+         
+
+
 
 
 

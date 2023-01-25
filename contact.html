@@ -25,12 +25,12 @@
             <label for="menu-icon"></label>
             <nav class="nav"> 		
                 <ul class="pt-5">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Ask Query</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ask Query</a></li>
+                    <li><a href="/#testimonial">Testimonial</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
        </div>
@@ -95,7 +95,7 @@
                                         <a href="tel: +971567214974"><i class="bi bi-telephone-fill me-2"></i>+971567214974</a>
                                     </div>
                                     <div class="d-flex mt-2 links">
-                                        <a href="sales@creativeoneme.com"><i class="bi bi-envelope-fill me-2"></i>sales@creativeoneme.com</a>
+                                        <a href="mailto: sales@creativeoneme.com"><i class="bi bi-envelope-fill me-2"></i>sales@creativeoneme.com</a>
                                     </div>
                                     <div class="d-flex mt-2 links">
                                         <a href="https://goo.gl/maps/1ZUDvsHzGoSxge6GA"><i class="bi bi-geo-alt-fill me-2"></i>P.O. Box : 18745, Dubai UAE</a>
@@ -140,9 +140,9 @@
                     <div class="col-lg-6">
                         <div class="d-flex links">
                             <div class="footer-links mt-4">
-                                <a href="#" class="me-3">About</a>
-                                <a href="#" class="me-3">Services</a>
-                                <a href="#" class="me-3">Contact</a>
+                                <a href="about.html" class="me-3">About</a>
+                                <a href="services.html" class="me-3">Services</a>
+                                <a href="contact.html" class="me-3">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -174,6 +174,72 @@
     </section>
 
      <!-- ---------------------------------footer end--------------------------------- -->
+
+
+
+
+
+
+          <!-- ------------------modal start---------------------- -->
+
+
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  
+                <div class="modal-body">
+                    <button type="button" class="btn-close mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+                  <form>
+                    <h5 class="modal-title fw-bold text-center head-color text-uppercase" id="exampleModalLabel">Get Free Consultation</h5>
+                    <p class="para-color text-center modal-sub">Please fill below form and submit. <br> We will contact soon! </p>
+    
+                   <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="number" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                         <label for="name" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Select service</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Payroll services</option>
+                            <option value="1">Book Keeping and Accounting</option>
+                            <option value="2">Preparation of Financial Statement</option>
+                            <option value="3">Budgeting and Financial Forecast</option>
+                            <option value="3">Vat Subimission and Vat Audit</option>
+                            <option value="3">Auditing</option>
+                            <option value="3">Stock Audit</option>
+                            <option value="3">Internal Audit</option>
+                          </select>
+                   </div>
+    
+                   <div class="d-flex modal-buttons">
+                    <button type="button" class="submit-btn btn-sm me-2 ">Book Consultation</button>
+                    <button type="button" class="close-btn btn-sm" data-bs-dismiss="modal">Close</button>
+                  </div> 
+    
+                  </form>
+    
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+         <!-- --------------------modal end------------------------- -->
+
+         
+
+
 
 
 
