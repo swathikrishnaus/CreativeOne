@@ -54,6 +54,29 @@ header .explore a:hover{
 .para-color{
     color: #9D9D9D;
 }
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:10px;
+	right:45px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:25px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.float:hover{
+  color: white;
+  opacity: 0.7;
+}
+.my-float{
+	margin-top:13px;
+}
 
 /* ------------------common css--------------------- */
 
@@ -61,7 +84,6 @@ header .explore a:hover{
 
 
 
-/* Please ❤ this if you like it! */
 
 
 
