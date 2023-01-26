@@ -18,8 +18,8 @@ header .img-bg{
 header .img-bg img{
     height: 60vh;
     width: auto;
-    margin: 0 auto;
-    display: block;
+    /* margin: 0 auto;
+    display: block; */
 }
 header .explore{
     margin-left: 500px;
@@ -454,10 +454,8 @@ header .explore{
   bottom: 10px;
   padding: 10px;
 }
-.section-center .logo {
-  margin-left: 50px!important;
-  margin-bottom: 10px;
-  margin-top: 10px;
+.section-center .logo  {
+  margin-right: 0 auto!important;
 }
 
 }
@@ -916,24 +914,22 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
   font-size: 15px;
 }
 .testimonial .client-words{
-  text-align: right;
-  margin-top: 150px;
+  text-align: center;
 }
 .testimonial .feedback{
   margin-top: 100px;
 }
-.testimonial img{
-  transform: skew(-3deg);
-  width: 300px;
+.testimonial .testimonial-img{
+  width: 400px;
   height: auto;
-  border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: -50px;
 }
-.testimonial .client-review{
-  width: 70%;
+.testimonial .client-img{
+  width: 80px;
+  height: auto;
 }
-
 .testimonial .next-buttons   i{
   color: #00B4F1;
   transition: 0.3s ease;
@@ -948,7 +944,6 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
   font-size: 25px;
 }
 .testimonial .next-buttons{
-  /* float: right; */
   display: block;
   margin-left: 70%;
 }
@@ -957,9 +952,16 @@ background: radial-gradient(at left 60%,rgb(160, 218, 241),rgb(255, 255, 255),rg
     padding: 10px;
     margin-top: 10px;
   }
+  .testimonial .testimonial-img{
+    margin: 0 auto;
+  }
   .testimonial .client-words{
     text-align: center;
     margin-top: 10px;
+  }
+  .testimonial .next-buttons{
+    margin: 0 auto;
+    display: block;
   }
   .testimonial img{
     transform: skew(-3deg);
